@@ -136,8 +136,8 @@ local fireSignal, rollChance do
     end
 end
 
-local map = { [0] = 'Left', [1] = 'Down', [2] = 'Up', [3] = 'Right', }
-local keys = { Up = Enum.KeyCode.Up; Down = Enum.KeyCode.Down; Left = Enum.KeyCode.Left; Right = Enum.KeyCode.Right; }
+local map = { [0] = 'Left', [1] = 'Down', [2] = 'Up', [3] = 'Right' [4] = 'Left2', [5] = 'Down2', [6] = 'Up'2, [7] = 'Right2' = 'Up2', [8] = 'Square'  , }
+local keys = { Up = Enum.KeyCode.Up; Down = Enum.KeyCode.Down; Left = Enum.KeyCode.Left; Right = Enum.KeyCode.Right; Up2 = Enum.KeyCode.Up2; Down2 = Enum.KeyCode.Down2; Left = Enum.KeyCode.Left2; Right2 = Enum.KeyCode.Right2; Square = Enum.KeyCode.Square; } }
 
 -- they are "weird" because they are in the middle of their Upper & Lower ranges 
 -- should hopefully make them more precise!
@@ -241,8 +241,8 @@ local window = library:CreateWindow('Funky Friday') do
         folder:AddLabel({ text = 'Sezei - Contributor'})
     end
 
-    window:AddLabel({ text = 'Version 1.4a' })
-    window:AddLabel({ text = 'Updated 8/20/21' })
+    window:AddLabel({ text = 'Version 0.1a' })
+    window:AddLabel({ text = 'Updated 25/08/21' })
     window:AddBind({ text = 'Menu toggle', key = Enum.KeyCode.Delete, callback = function() library:Close() end })
 end
 
